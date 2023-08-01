@@ -4,19 +4,29 @@ import './Navbar.css';
 
 
 const Navbar = () => {
+  
   return (
-    <nav className="navbar">
-        <div className="navbar-container">
-            {/* <input type="checkbox" name="" id=""> */}
-            
-            <ul className="menu-items">
-                <li><a href="/">Login</a></li>
-                <li><a href="/Signup">Signup</a></li>
-                
-            </ul>
-            <h1 className="logo">Share Notes</h1>
+    <div className="nav">
+      {/* <input type="checkbox" id="nav-check"> */}
+      <div className="nav-header">
+        <div className="nav-title">
+          ShareNotes
         </div>
-    </nav>
+      </div>
+      {/* <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div> */}
+      
+      <div className="nav-links">
+        <a href="/">Login</a>
+        <a href="/Signup">Signup</a>
+        
+      </div>
+    </div>
 
   )
 }
